@@ -14,9 +14,9 @@ public class IntentsHandler: NSObject, SleepIntentHandling, TimeIntentHandling {
     public func handle(intent: SleepIntent, completion: @escaping (SleepIntentResponse) -> Void) {
         let hour = Calendar.current.component(.hour, from: Date())
         if hour > 19 || hour < 4 {
-            completion(.success(timeOfDay: "Going to bed"))
+            completion(.success(action: "Sleeping"))
         } else {
-            completion(.success(timeOfDay: "Waking up"))
+            completion(.success(action: "Waking"))
         }
     }
     

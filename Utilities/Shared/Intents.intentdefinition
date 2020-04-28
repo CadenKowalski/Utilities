@@ -22,7 +22,7 @@
 			<key>INIntentConfigurable</key>
 			<true/>
 			<key>INIntentDescription</key>
-			<string>Manages sleep tracking</string>
+			<string>Returns whether the user is going to bed or waking up</string>
 			<key>INIntentDescriptionID</key>
 			<string>Y0UmlB</string>
 			<key>INIntentIneligibleForSuggestions</key>
@@ -34,7 +34,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Track my Sleep</string>
+					<string>Sleeping or Waking?</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>HrSchJ</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
@@ -49,11 +49,11 @@
 				<array>
 					<dict>
 						<key>INIntentResponseCodeConciseFormatString</key>
-						<string>${timeOfDay}</string>
+						<string>${action}</string>
 						<key>INIntentResponseCodeConciseFormatStringID</key>
 						<string>bh2mj3</string>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>${timeOfDay}</string>
+						<string>${action}</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>6jwdKI</string>
 						<key>INIntentResponseCodeName</key>
@@ -77,18 +77,18 @@
 				<key>INIntentResponseLastParameterTag</key>
 				<integer>7</integer>
 				<key>INIntentResponseOutput</key>
-				<string>timeOfDay</string>
+				<string>action</string>
 				<key>INIntentResponseParameters</key>
 				<array>
 					<dict>
 						<key>INIntentResponseParameterDisplayName</key>
-						<string>Time Of Day</string>
+						<string>Action</string>
 						<key>INIntentResponseParameterDisplayNameID</key>
 						<string>fmXC3w</string>
 						<key>INIntentResponseParameterDisplayPriority</key>
 						<integer>1</integer>
 						<key>INIntentResponseParameterName</key>
-						<string>timeOfDay</string>
+						<string>action</string>
 						<key>INIntentResponseParameterTag</key>
 						<integer>7</integer>
 						<key>INIntentResponseParameterType</key>
@@ -97,7 +97,7 @@
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>Track my Sleep</string>
+			<string>Action</string>
 			<key>INIntentTitleID</key>
 			<string>81C9pg</string>
 			<key>INIntentType</key>
