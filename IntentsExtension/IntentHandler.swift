@@ -15,6 +15,8 @@ class IntentHandler: INExtension {
         switch intent {
         case is SleepIntent:
             return IntentsHandler()
+        case is TimeIntent:
+            return IntentsHandler()
         default:
             fatalError("Undhandled Intent")
         }

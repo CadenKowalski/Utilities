@@ -7,36 +7,31 @@
 //
 
 import Foundation
-import CloudKit
+import Intents
 
-public class IntentsHandler: NSObject, SleepIntentHandling {
-        
+public class IntentsHandler: NSObject, SleepIntentHandling, TimeIntentHandling {
+    
     public func handle(intent: SleepIntent, completion: @escaping (SleepIntentResponse) -> Void) {
         let hour = Calendar.current.component(.hour, from: Date())
         if hour > 19 || hour < 4 {
-            goingToBed() { error in
-                if error == nil {
-                    completion(.success(successMessage: "Good Night"))
-                } else {
-                    completion(.failure(failureMessage: "\(error!)"))
-                }
-            }
+            completion(.success(timeOfDay: "Going to bed"))
         } else {
-            wakingUp() { error in
-                if error == nil {
-                    completion(.success(successMessage: "Good morning Caden, you slept for ..."))
-                } else {
-                    completion(.failure(failureMessage: "\(error!)"))
-                }
-            }
+            completion(.success(timeOfDay: "Waking up"))
         }
     }
     
-    func goingToBed(completion: @escaping(String?) -> Void) {
-        completion(nil)
+    public func resolveStartTime(for intent: TimeIntent, with completion: @escaping (INDateComponentsResolutionResult) -> Void) {
+        guard let timeSlept = intent.startTime else {
+            completion(INDateComponentsResolutionResult.needsValue())
+            return
+        }
+        
+        completion(INDateComponentsResolutionResult.success(with: timeSlept))
     }
     
-    func wakingUp(completion: @escaping(String?) -> Void) {
-        
+    public func handle(intent: TimeIntent, completion: @escaping (TimeIntentResponse) -> Void) {
+        let calendar = Calendar.current
+        let timeBetweenDates = calendar.dateComponents([.hour, .minute], from: calendar.date(from: intent.startTime!)!, to: Date())
+        completion(.success(timeSleptString: "Good morning Caden, you slept for \(String(describing: timeBetweenDates.hour)) hours and \(String(describing: timeBetweenDates.minute)) minutes last night"))
     }
 }

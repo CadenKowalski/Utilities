@@ -148,7 +148,6 @@
 		57723C432457C31C007A84E7 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				57723C8B2457C860007A84E7 /* Utilities.entitlements */,
 				57723C5C2457C343007A84E7 /* Shared */,
 				57723C5B2457C33C007A84E7 /* Resources */,
 				57723C5A2457C338007A84E7 /* Model */,
@@ -189,6 +188,7 @@
 				57723C462457C31C007A84E7 /* SceneDelegate.swift */,
 				57723C5D2457C3BC007A84E7 /* Assets.xcassets */,
 				57723C522457C31E007A84E7 /* Info.plist */,
+				57723C8B2457C860007A84E7 /* Utilities.entitlements */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -556,7 +556,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Utilities/Utilities.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Utilities/Resources/Utilities.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7ZA9Y8B6FF;
 				INFOPLIST_FILE = Utilities/Resources/Info.plist;
@@ -576,7 +576,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Utilities/Utilities.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Utilities/Resources/Utilities.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7ZA9Y8B6FF;
 				INFOPLIST_FILE = Utilities/Resources/Info.plist;

@@ -26,9 +26,12 @@
 		<dict>
 			<key>IntentsRestrictedWhileLocked</key>
 			<array/>
+			<key>IntentsRestrictedWhileProtectedDataUnavailable</key>
+			<array/>
 			<key>IntentsSupported</key>
 			<array>
 				<string>SleepIntent</string>
+				<string>TimeIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>

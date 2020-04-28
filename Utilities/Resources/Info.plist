@@ -23,6 +23,7 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>SleepIntent</string>
+		<string>TimeIntent</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
