@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57086C0F245C765C00C8E345 /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57086C0E245C765C00C8E345 /* CustomUI.swift */; };
 		57723C452457C31C007A84E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57723C442457C31C007A84E7 /* AppDelegate.swift */; };
 		57723C472457C31C007A84E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57723C462457C31C007A84E7 /* SceneDelegate.swift */; };
 		57723C492457C31C007A84E7 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57723C482457C31C007A84E7 /* Controller.swift */; };
@@ -76,6 +77,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		57086C0E245C765C00C8E345 /* CustomUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUI.swift; sourceTree = "<group>"; };
 		57723C412457C31C007A84E7 /* Utilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57723C442457C31C007A84E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57723C462457C31C007A84E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		57723C5A2457C338007A84E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				57086C0E245C765C00C8E345 /* CustomUI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57086C0F245C765C00C8E345 /* CustomUI.swift in Sources */,
 				57723C492457C31C007A84E7 /* Controller.swift in Sources */,
 				57723C452457C31C007A84E7 /* AppDelegate.swift in Sources */,
 				57723C732457C4C4007A84E7 /* Intents.intentdefinition in Sources */,

@@ -31,7 +31,10 @@ public class IntentsHandler: NSObject, SleepIntentHandling, TimeIntentHandling {
     
     public func handle(intent: TimeIntent, completion: @escaping (TimeIntentResponse) -> Void) {
         let calendar = Calendar.current
-        let timeBetweenDates = calendar.dateComponents([.hour, .minute], from: calendar.date(from: intent.startTime!)!, to: Date())
-        completion(.success(timeSleptString: "Good morning Caden, you slept for \(String(describing: timeBetweenDates.hour)) hours and \(String(describing: timeBetweenDates.minute)) minutes last night"))
+        let startTime = calendar.date(from: intent.startTime!)!
+        let timeBetweenDates = calendar.dateComponents([.hour, .minute], from: startTime, to: Date())
+        guard let hour = timeBetweenDates.hour else { return }
+        guard let minute = timeBetweenDates.minute else { return }
+        completion(.success(timeSleptString: "Good morning Caden, you slept for \(String(describing: hour)) hours and \(String(describing: minute)) minutes last night"))
     }
 }
