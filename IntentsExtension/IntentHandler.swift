@@ -17,6 +17,8 @@ class IntentHandler: INExtension {
             return IntentsHandler()
         case is TimeIntent:
             return IntentsHandler()
+        case is WeatherIntent:
+            return IntentsHandler()
         default:
             fatalError("Undhandled Intent")
         }

@@ -24,6 +24,7 @@
 	<array>
 		<string>SleepIntent</string>
 		<string>TimeIntent</string>
+		<string>WeatherIntent</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

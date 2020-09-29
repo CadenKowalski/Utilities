@@ -5,15 +5,15 @@
 	<key>INEnums</key>
 	<array/>
 	<key>INIntentDefinitionModelVersion</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>INIntentDefinitionNamespace</key>
 	<string>vSBZkf</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>19C56a</string>
+	<string>20A5364e</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>11E503a</string>
+	<string>12A8189h</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>11.4.1</string>
+	<string>12.0</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -140,6 +140,8 @@ I went to bed at ${startTime}</string>
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
 					<key>INIntentParameterDisplayName</key>
 					<string>Start Time</string>
 					<key>INIntentParameterDisplayNameID</key>
@@ -241,6 +243,95 @@ I went to bed at ${startTime}</string>
 			<string>Custom</string>
 			<key>INIntentVerb</key>
 			<string>Do</string>
+		</dict>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>download</string>
+			<key>INIntentConfigurable</key>
+			<true/>
+			<key>INIntentDescription</key>
+			<string>Returns the appropriate hour index for retrieving weather data</string>
+			<key>INIntentDescriptionID</key>
+			<string>TCoZbG</string>
+			<key>INIntentIneligibleForSuggestions</key>
+			<true/>
+			<key>INIntentManagedParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Get Weather</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>GMvUdH</string>
+					<key>INIntentParameterCombinationUpdatesLinked</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentName</key>
+			<string>Weather</string>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>${timeIndex}</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>I126Ca</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>${timeIndex}</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>QHfbhv</string>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>Error</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>9ktIs7</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>Error</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>CUnYWe</string>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+				<key>INIntentResponseLastParameterTag</key>
+				<integer>4</integer>
+				<key>INIntentResponseOutput</key>
+				<string>timeIndex</string>
+				<key>INIntentResponseParameters</key>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayName</key>
+						<string>Time Index</string>
+						<key>INIntentResponseParameterDisplayNameID</key>
+						<string>uLBAtO</string>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>timeIndex</string>
+						<key>INIntentResponseParameterTag</key>
+						<integer>4</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>Integer</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>Weather</string>
+			<key>INIntentTitleID</key>
+			<string>Bi1i7w</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>Get</string>
 		</dict>
 	</array>
 	<key>INTypes</key>

@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double IntentsKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char IntentsKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <IntentsKit/PublicHeader.h>
-
-

@@ -32,6 +32,7 @@
 			<array>
 				<string>SleepIntent</string>
 				<string>TimeIntent</string>
+				<string>WeatherIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
